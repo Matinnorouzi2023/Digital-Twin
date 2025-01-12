@@ -104,11 +104,78 @@ Wind energy is a vital component of sustainable energy solutions, and accurate p
 - Expand the project to analyze turbine efficiency under varying environmental conditions.
 
 ---
+# **Wind Turbine Predictive Maintenance**
+
+## **Overview of the Code Functionality**
+
+1. **Libraries Imported**  
+   - `numpy` and `pandas`: For numerical operations and data handling.  
+   - `matplotlib.pyplot` and `seaborn`: For data visualization.  
+   - `sklearn`: Indicates the intention to apply machine learning models (though not yet implemented).  
+
+2. **Dataset Loading**  
+   - Loads `predictive_maintenance.csv`, which contains maintenance data for machinery.  
+   - Columns include device ID, failure occurrence, and sensor metrics (`metric1` to `metric9`).  
+
+3. **Failure Detection**  
+   - Iterates through the 'failure' column and prints the index and date for each failure (`failure == 1`).  
+   - Identifies when and which devices experienced failures.  
+
+---
+
+## **Application in Wind Turbine Maintenance**
+
+- **Identifying Failure Patterns:** Detects when turbines fail most frequently.  
+- **Tracking Sensor Data:** Monitors vibration, temperature, and power output for signs of wear.  
+- **Preventive Actions:** Enables timely maintenance by recognizing early failure signs.  
+
+---
+
+## **Model Recommendations for Predictive Maintenance**
+
+### 1. **Gradient Boosting Models (e.g., XGBoost, LightGBM)**  
+- **Accuracy:** High  
+- **Error Rate:** Low  
+- **Cost:** Moderate  
+- **Why Best?** Handles complex patterns and imbalanced datasets effectively.  
+
+### 2. **Random Forest Classifier**  
+- **Accuracy:** Moderate to High  
+- **Error Rate:** Moderate  
+- **Cost:** Low to Moderate  
+- **Why?** Easy to implement but may struggle with imbalanced data.  
+
+### 3. **Logistic Regression**  
+- **Accuracy:** Moderate  
+- **Error Rate:** Higher for complex relationships  
+- **Cost:** Low  
+- **Why?** Simple and cost-effective but limited for complex problems.  
+
+### 4. **Neural Networks (Deep Learning)**  
+- **Accuracy:** Very High  
+- **Error Rate:** Low  
+- **Cost:** High  
+- **Why?** Best for complex data but resource-intensive.  
+
+---
+
+## **Recommendation**
+
+**Gradient Boosting Models (XGBoost)** are the most suitable for wind turbine maintenance due to their high accuracy, low error rate, and ability to manage complex, imbalanced datasets efficiently.
+
+---
+
+## **Future Scope**
+
+- **Advanced Models:** Integrate advanced regression techniques (e.g., polynomial regression, neural networks).  
+- **Real-Time Data:** Incorporate real-time data for dynamic prediction and monitoring.  
+- **Environmental Impact:** Expand analysis to assess turbine efficiency under varying environmental conditions.  
+
+
+
 
 ## **Contributors**
-
-- **Your Name:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile)  
-- **Contact:** [Your Email](mailto:your-email@example.com)
+Matin Norouzi
 
 ---
 
